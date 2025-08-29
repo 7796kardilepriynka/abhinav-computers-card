@@ -24,7 +24,7 @@ body {
 
 .card {
   background: #fff;
-  border: 5px solid #d1d9e6;
+  border: 10px solid rgba(255, 255, 255, 0.3); 
   border-radius: 6px;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -33,6 +33,7 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
+
 }
 
 .ribbon {
@@ -235,10 +236,10 @@ h3 {
   }
 
   .profile-img {
-    width: 180px;
-    height: 180px;
-    top: 60px;
-    margin-top: 5px;
+    width: 160px;
+    height: 160px;
+    top: 50px;
+    margin-top: 30px;
    
   }
 
