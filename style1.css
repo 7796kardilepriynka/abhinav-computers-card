@@ -1,48 +1,38 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  /* background-color: #e6f7ff; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
- background: linear-gradient(135deg, #e0f7fa 25%, #e6f2ff 100%);
- background-image: repeating-linear-gradient(
+  background: linear-gradient(135deg, #e0f7fa 25%, #e6f2ff 100%);
+  background-image: repeating-linear-gradient(
     45deg,
     #e0f2f1 0,
     #e0f2f1 1px,
     transparent 1px,
     transparent 20px
   );
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
-
-
 
 .card-container {
   width: 100%;
   max-width: 400px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card {
   background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  overflow: hidden; 
-  text-align: center;
-  align-items: center;
-  position: relative;
-  /* border-radius: 20px; */
-  box-sizing: border-box;
-  border: 10px solid rgba(255, 255, 255, 0.3); 
-  width: 550px;
-  height: 1150px;
+  border: 5px solid #d1d9e6;
+  border-radius: 6px;
   border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px; 
-  padding: 4px;
-  
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
 
 .ribbon {
@@ -59,8 +49,8 @@ body {
 }
 
 
-
 .card-header {
+  /* background: linear-gradient(to right, #6a11cb, #2575fc); */
   background: linear-gradient(to right, #6a11cb, #2575fc);
   padding: 24px 16px 60px;
   color: white;
@@ -71,10 +61,11 @@ body {
 
 .card-header h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px #00000033;
+  margin-top: 10px;
  
 }
 
@@ -85,28 +76,35 @@ body {
 }
 
 .profile-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 195px;
+  height: 195px;
   object-fit: cover;
-   border: 3px solid white;
+  border-radius: 50%;
+  border: 1px solid gray;
   position: absolute;
   top: 100px;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
   z-index: 2; 
+  margin-top: 15px;
+
+ 
 }
+
 
 .card-body {
   padding: 80px 20px 20px;
   background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc);
+
+  /* background: linear-gradient(to bottom right, #e0c3fc, #8ec5fc); */
   
   /* background-color: #e0f7fa; */
   /* background: linear-gradient(135deg, #ffe0b2, #fff3e0); */
   margin-top: 40px;
   color: #2d2d2d;
 }
+
 
 h3 {
   margin: 10px 0 5px;
@@ -125,7 +123,6 @@ h3 {
  
 }
 
-
 .icon-circle {
   width: 60px;
   height: 60px;
@@ -142,15 +139,6 @@ h3 {
  
 }
 
-
-/* .contact-info i {
-  margin-right: 8px;
-  font-size: 22px;
-} */
-
-/* .contact-info .phone { color: #27ae60; }
-.contact-info .email { color: #e74c3c; }
-.contact-info .location { color: #f39c12; } */
 
 .social-icons {
   margin: 16px 0;
@@ -172,24 +160,23 @@ h3 {
  
 }
 
-.social-icons .instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, 
-              #fd5949 45%, #d6249f 60%, #285AEB 90%);
-}.social-icons .facebook { background: #1877F2; }
-.social-icons .web { background: #D44638; }
 
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.facebook { background: #1877F2; }
+.web { background: #D44638; }
 
 .services {
   text-align: left;
   padding: 10px 20px;
- 
 }
 
 .services h4 {
   margin-bottom: 8px;
-  /* color: #444; */
-  font-size: 25px;
-  margin-top: 5px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .services ul {
@@ -200,92 +187,84 @@ h3 {
 .services li {
   margin-bottom: 5px;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .save-btn {
-  margin-top: 16px;
-  /* background-color: #ff5e78; */
-  /* background-color:   crimson; */
-  background: linear-gradient(to right, #00b09b, #96c93d);  /* Green CTA */
+  margin-top: 20px;
+  background: linear-gradient(to right, #00b09b, #96c93d);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 19px;
-  transition: 0.3s;
+  font-size: 18px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .save-btn i {
-  margin-right: 6px;
-  
+  margin-right: 8px;
 }
 
 .save-btn:hover {
-  background-color: #e04865;
+  opacity: 0.9;
 }
-
-.footer-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  padding-bottom: 10px;
-}
-
-.footer-icons i {
-  font-size: 24px;
-  color: #555;
-  cursor: pointer;
-  transition: transform 0.2s, color 0.2s;
-}
-
-.footer-icons i:hover {
-  color: #007bff;
-  transform: scale(1.2);
-}
-
-
-
-.divider-line {
-  border: none;
-  height: 1px;
-  background: #ddd;
-  margin: 15px auto;
-  width: 90%;
-}
-
 
 .corner-tag {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 250px;
-  height: 150px;
+  width: 200px;
+  height: 100px;
   background: linear-gradient(135deg, #f12711, #f5af19);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  z-index: 2; /* Ensures it stays on top */
-  pointer-events: none; /* Avoids blocking interactions */
-  white-space: nowrap;
-overflow: hidden;
-
+  z-index: 2;
+  pointer-events: none;
 }
 
+/* 🌐 MEDIA QUERY FOR MOBILE */
+@media (max-width: 768px) {
+ body {
+    padding: 20px 10px;
+  }
 
+  .card {
+    width: 100%;
+    height: auto;
+  }
 
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    top: 60px;
+    margin-top: 5px;
+   
+  }
 
+  .card-header {
+    height: 100px;
+    padding-bottom: 40px;
+  }
 
+  .card-body {
+    padding-top: 60px;
+  }
 
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+  }
 
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+  }
 
-
-
-
-
-
-
-
-
-
-
+  .save-btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
