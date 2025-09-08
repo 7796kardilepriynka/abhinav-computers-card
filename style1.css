@@ -212,6 +212,28 @@ h3 {
   opacity: 0.9;
 }
 
+.share-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 46%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #ff8c00, #ff3c3c); /* orange-red gradient */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.share-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 .corner-tag {
   position: absolute;
   bottom: 0;
