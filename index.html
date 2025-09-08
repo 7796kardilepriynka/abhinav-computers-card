@@ -116,4 +116,18 @@
 
 
 </body>
+
+<script>
+  function shareCard() {
+    if (navigator.share) {
+      navigator.share({
+        title: "SmartVC - Digital Visiting Card",
+        text: "Check out this digital card!",
+        url: window.location.href
+      });
+    } else {
+      alert("Sharing not supported in this browser.");
+    }
+  }
+</script>
 </html>
